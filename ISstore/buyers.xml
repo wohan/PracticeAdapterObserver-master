@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listCase>
+    <listCase>
+        <id>1</id>
+        <user_name>ABRAMOVICH</user_name>
+        <user_pass>123</user_pass>
+        <phone>552266</phone>
+    </listCase>
+    <listCase>
+        <id>2</id>
+        <user_name>SKARLET</user_name>
+        <user_pass>1234</user_pass>
+        <phone>552266</phone>
+    </listCase>
+    <listCase>
+        <id>3</id>
+        <user_name>LOURENS</user_name>
+        <user_pass>12345</user_pass>
+        <phone>552266</phone>
+    </listCase>
+    <listCase>
+        <id>5</id>
+        <user_name>Олег</user_name>
+        <user_pass>12345</user_pass>
+        <phone>556622</phone>
+    </listCase>
+    <listCase>
+        <id>6</id>
+        <user_name>Василий</user_name>
+        <user_pass>6699</user_pass>
+        <phone>669966</phone>
+    </listCase>
+    <listCase>
+        <id>7</id>
+        <user_name>Василий</user_name>
+        <user_pass>6699</user_pass>
+        <phone>669966</phone>
+    </listCase>
+    <listCase>
+        <id>8</id>
+        <user_name>Василий2</user_name>
+        <user_pass>6699</user_pass>
+        <phone>6699667</phone>
+    </listCase>
+</listCase>

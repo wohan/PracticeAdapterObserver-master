@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+  <servlet>
+    <servlet-name>ListBuyer</servlet-name>
+    <servlet-class>main.controllers.ListBuyer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListBuyer</servlet-name>
+    <url-pattern>/listbuyer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>main.controllers.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CheckInServlet</servlet-name>
+    <servlet-class>main.controllers.CheckInServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckInServlet</servlet-name>
+    <url-pattern>/checkin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>NotFoundServlet</servlet-name>
+    <servlet-class>main.controllers.NotFoundServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NotFoundServlet</servlet-name>
+    <url-pattern>/buyernotfound</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PassNotTrueServlet</servlet-name>
+    <servlet-class>main.controllers.PassNotTrueServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PassNotTrueServlet</servlet-name>
+    <url-pattern>/passnottrue</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BuyerExistServlet</servlet-name>
+    <servlet-class>main.controllers.BuyerExistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuyerExistServlet</servlet-name>
+    <url-pattern>/buyerexist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListAdminServlet</servlet-name>
+    <servlet-class>main.controllers.ListAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListAdminServlet</servlet-name>
+    <url-pattern>/listadmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>NoSatisfactionServlet</servlet-name>
+    <servlet-class>main.controllers.NoSatisfactionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoSatisfactionServlet</servlet-name>
+    <url-pattern>/nosatisfaction</url-pattern>
+  </servlet-mapping>
+
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>WEB-INF/beams.xml</param-value>
+  </context-param>
+
+
+  <filter>
+    <filter-name>AdminFilter</filter-name>
+    <filter-class>main.controllers.filters.AdminFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AdminFilter</filter-name>
+    <servlet-name>ListAdminServlet</servlet-name>
+  </filter-mapping>
+
+
+  <resource-ref>
+  <description>DB Connection</description>
+  <res-ref-name>jdbc/Store</res-ref-name>
+  <res-type>javax.sql.DataSource</res-type>
+  <res-auth>Container</res-auth>
+  </resource-ref>
+
+
+
+</web-app>

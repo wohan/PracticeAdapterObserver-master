@@ -1,0 +1,13 @@
+group 'Gradle_index'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+
+task hello
+
+hello << {
+    print 'hello, '
+}

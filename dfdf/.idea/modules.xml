@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dfdf.iml" filepath="$PROJECT_DIR$/.idea/modules/dfdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dfdf_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dfdf_main.iml" group="dfdf" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dfdf_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dfdf_test.iml" group="dfdf" />
+    </modules>
+  </component>
+</project>

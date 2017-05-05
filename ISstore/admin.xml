@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listCase>
+    <listCase>
+        <id>1</id>
+        <user_name>Vlad</user_name>
+        <user_pass>12345</user_pass>
+    </listCase>
+    <listCase>
+        <id>2</id>
+        <user_name>Mad</user_name>
+        <user_pass>54321</user_pass>
+    </listCase>
+</listCase>
